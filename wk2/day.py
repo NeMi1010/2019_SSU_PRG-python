@@ -1,0 +1,6 @@
+days = ['월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일']
+today = int(input("오늘 요일을 입력하세요. (월:0 화:1 수:2 목:3 금:4 토:5 일:6) : "))
+skips = int(input("며칠 이후의 요일을 알고 싶나요? : "))
+next_day = (today + skips) % 7
+
+print("%s일 이후의 요일은 " % skips + "%s입니다." % days[next_day])
