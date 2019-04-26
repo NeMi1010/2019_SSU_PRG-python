@@ -2,7 +2,7 @@ while True :
     chk = True
     age = input("나이 : ")
     for ch in age :
-        if not ch.isnumeric() :
+        if not ch.isdecimal() :
             chk = False
             break
     if chk :
